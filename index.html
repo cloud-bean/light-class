@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="js/angular.js "></script>
-    <script src="js/angular-ui-router.js "></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js "></script>
+    <script src="/bower_components/angularjs/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js "></script>
     <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
 
-    <!--<link rel="stylesheet" href="css/bootstrap.css"/>-->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css.map">
     <title>light - class</title>
 </head>
 <body ng-app="lightClass">
-    <header>light class header placeholder</header>
+    <header class"nav nav-bar">
+        <ul>
+            <li>notice</li>
+            <li>score</li>
+            <li>profile</li>
+        </ul>
+    </header>
         <div class="container">
             <div ui-view></div>
         </div>
 
-    <footer>light class header placeholder</footer>
+    <footer>copyright</footer>
     <script src="app.js"></script>
     <script src="router.js"></script>
 </body>

@@ -1,0 +1,23 @@
+{
+  "name": "light-class",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cloud-bean/light-class",
+  "authors": [
+    "xinnix <xinnix2000@gmail.com>"
+  ],
+  "description": "online edu",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.4.7",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "angular-ui-router": "~0.2.15"
+  }
+}
