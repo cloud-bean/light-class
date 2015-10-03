@@ -15,9 +15,9 @@ App.config(function ($stateProvider, $urlRouterProvider) {
           abstract: true,
           templateUrl: 'index.html'
       })
-      .state('msg', {
-        url: '/msg',
-        templateUrl: 'templates/msg.tpl.html'
+      .state('notice', {
+        url: '/notice',
+        templateUrl: 'templates/notice.tpl.html'
       })
       .state('score', {
         url: '/score',
@@ -30,6 +30,6 @@ App.config(function ($stateProvider, $urlRouterProvider) {
     ;
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/msg');
+    $urlRouterProvider.otherwise('/notice');
 
   });

@@ -2,31 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="/bower_components/angularjs/angular.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.js "></script>
-    <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+    <script src="app.js"></script>
+    <script src="router.js"></script>
+    <!-- // <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script> -->
 
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css.map">
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/notice.css">
     <title>light - class</title>
 </head>
 <body ng-app="lightClass">
-    <header class"nav nav-bar">
-        <ul>
-            <li>notice</li>
-            <li>score</li>
-            <li>profile</li>
-        </ul>
-    </header>
-        <div class="container">
-            <div ui-view></div>
-        </div>
 
-    <footer>copyright</footer>
-    <script src="app.js"></script>
-    <script src="router.js"></script>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">LightClass</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#msg">notice</a></li>
+            <li><a href="#score">score</a></li>
+            <li><a href="#me">profile</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div></nav>
+    <div class="container">
+            <div ui-view></div>
+    </div>
+    
+   <footer class="footer">
+      <div class="container">
+        <p class="text-muted">light class copyright.</p>
+      </div>
+    </footer>
+
+
 </body>
 </html>
